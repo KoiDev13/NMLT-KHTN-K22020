@@ -1,19 +1,19 @@
 ﻿using System;
 
-public static bool Bai316_KTSonguyenChanBehon2015(int[,] A)
+public static double Bai318_TongSothucAm(double[,] B)
 {
     int i, j;
-    bool KT = false;
-    for (i = 0; i < A.GetLength(0); i++)
+    double S = 0;
+    for (i = 0; i < B.GetLength(0); i++)
     {
-        for (j = 0; j < A.GetLength(1); j++)
+        for (j = 0; j < B.GetLength(1); j++)
         {
-            if (A[i, j] % 2 == 0 && A[i, j] < 2015)
+            if (B[i, j] < 0)
             {
-                KT = true;
+                S = S + B[i, j];
             }
         }
     }
-    Console.WriteLine(KT);
-    return KT;
+    Console.WriteLine($"Tong gia tri am trong ma tran so thuc: {S}");
+    return S;
 }
