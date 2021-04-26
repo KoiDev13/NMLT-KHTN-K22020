@@ -1,0 +1,29 @@
+C:\Users\Binh\source\repos\DoAn\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\Binh\source\repos\DoAn\DoAn\bin\Debug\DoAn.exe
+C:\Users\Binh\source\repos\DoAn\DoAn\bin\Debug\DoAn.pdb
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.exe
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\Binh\source\repos\DoAn\DoAn\obj\Debug\DoAn.Form1.resources
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\bin\Debug\DoAn.exe
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\bin\Debug\DoAn.pdb
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.csprojAssemblyReference.cache
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.Form1.resources
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.exe
+C:\Users\Binh\Desktop\de bai\DoAn\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\bin\Debug\DoAn.exe.config
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\bin\Debug\DoAn.exe
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\bin\Debug\DoAn.pdb
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.csprojAssemblyReference.cache
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.Form1.resources
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.Properties.Resources.resources
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.csproj.GenerateResource.cache
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.exe
+C:\Users\Binh\Desktop\de bai\New folder\DoAn\DoAn\DoAn\obj\Debug\DoAn.pdb
