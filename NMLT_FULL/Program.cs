@@ -13,6 +13,10 @@ namespace NMLT_FULL
             Console.WriteLine($"Tong phan tu cua ma tran la {sum}");
             int maxi = XL_MATRAN.TimMax(A);
             Console.WriteLine($"Max cua ma tran la {maxi}");
+            int nguyento = XL_MATRAN.DemNguyenTo(A);
+            Console.WriteLine($"Ma tran co {nguyento} so nguyen to");
+            int tongbien = XL_MATRAN.TongBien(A);
+            Console.WriteLine($"Tong phan tu bien la {tongbien} ");
             
             /*  
             // Nhap mang
