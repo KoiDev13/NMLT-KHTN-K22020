@@ -7,16 +7,40 @@ namespace NMLT_FULL
         static void Main(string[] args)
         {
             // Nhap ma tran
+
+
             int[,] A = XL_MATRAN.NhapMaTran();
             XL_MATRAN.XuatMaTran(A);
+            
             int sum = XL_MATRAN.TinhTong(A);
             Console.WriteLine($"Tong phan tu cua ma tran la {sum}");
+            /*
             int maxi = XL_MATRAN.TimMax(A);
             Console.WriteLine($"Max cua ma tran la {maxi}");
             int nguyento = XL_MATRAN.DemNguyenTo(A);
             Console.WriteLine($"Ma tran co {nguyento} so nguyen to");
             int tongbien = XL_MATRAN.TongBien(A);
             Console.WriteLine($"Tong phan tu bien la {tongbien} ");
+            int tong1dong = XL_MATRAN.Tong1Dong(A,3);
+            Console.WriteLine($"Tong duong 1 dong la {tong1dong} ");
+
+            int tongduong1cot = XL_MATRAN.TongDuong1Cot(A);
+            Console.WriteLine($"Tong phan tu duong cua cot la {tongduong1cot} ");
+
+            bool toanduong = XL_MATRAN.KiemTraToanDuong(A);
+            Console.WriteLine($"Ma tran toan duong la {toanduong}");
+  
+            int k = 1;
+            bool dongtang = XL_MATRAN.KiemTraDongTang(A, k);
+            Console.WriteLine($"Dong {k} co phan tu tang la {dongtang}");
+            
+
+            bool giamdan = XL_MATRAN.KiemTraGiamDan(A);
+            Console.WriteLine($"Giam dan la {giamdan}");
+            */
+
+            int mode = XL_MATRAN.TimPhanTuXuatHienNhieuNhat(A);
+            Console.WriteLine($"Phan tu xuat hien nhieu nhat {mode}");
             
             /*  
             // Nhap mang

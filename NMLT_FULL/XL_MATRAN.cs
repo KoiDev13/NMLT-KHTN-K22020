@@ -29,16 +29,14 @@ namespace Test_NMLT
         public static void XuatMaTran(int[,] A)
         {
             Console.WriteLine("Ma tran vua nhap la:");
-            Console.Write("[");
             for (int i = 0; i < A.GetLength(0); i++)
             {
                 Console.WriteLine("");
                 for (int j = 0; j < A.GetLength(1); j++)
                 {
-                    Console.Write(A[i, j] + ",");
+                    Console.Write(A[i, j]);
                 }
             }
-            Console.WriteLine("]");
         }
         public static int TinhTong(int[,] A)
         {
@@ -69,7 +67,7 @@ namespace Test_NMLT
             }
             return Max;
         }
-        
+
         //Bài 317: Viết hàm đếm số lượng số nguyên tố trong ma trận số nguyên
         public static int DemNguyenTo(int[,] A)
         {
@@ -94,14 +92,126 @@ namespace Test_NMLT
             for (int j = 0; j < A.GetLength(1); j++) // Tinh 2 dong bien
             {
                 s = s + A[0, j];
-                s = s + A[A.GetLength(0)-1, j]; // Dong cuoi 
+                s = s + A[A.GetLength(0) - 1, j]; // Dong cuoi 
             }
-            for (int i = 1; i < A.GetLength(0)-1; i++) // Tinh 2 cot bien , nho bo dong dau tien
+            for (int i = 1; i < A.GetLength(0) - 1; i++) // Tinh 2 cot bien , nho bo dong dau tien
             {
-                s = s + A[i,0];
-                s = s + A[i, A.GetLength(1)-1]; // Cot cuoi
+                s = s + A[i, 0];
+                s = s + A[i, A.GetLength(1) - 1]; // Cot cuoi
             }
             return s;
+        }
+
+        //Bài 322: Tính tổng các giá trị trên 1 dòng trong ma trận các số thực
+        public static int Tong1Dong(int[,] A, int k)
+        {
+            Console.WriteLine("Nhap dong can tinh tong");
+            k = int.Parse(Console.ReadLine());
+            int s = 0;
+            for (int j = 0; j < A.GetLength(1) ; j++)
+            {
+                s = s + A[k, j];
+            }
+            Console.WriteLine($"Tong cua dong {k} trong ma tran la {s}");
+            return s;
+        }
+        //Bài 323: Tính tích các giá trị dương trên 1 cột trong ma trận các số thực
+        public static int TongDuong1Cot(int[,] A)
+        {
+            int k;
+            Console.WriteLine("Nhap cot can tinh tong");
+            k = int.Parse(Console.ReadLine());
+            int s = 0;
+            for (int i = 0; i < A.GetLength(0) ; i++)
+            {
+                if (A[i, k] > 0)
+                {
+                    s = s + A[i, k];
+                }
+            }
+            return s;
+        }
+
+        //Bài 351: Kiểm tra ma trận có toàn dương hay không
+        public static bool KiemTraToanDuong(int[,] A)
+        {
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    if (A[i, j] < 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        //Bài 352: Kiểm tra một hàng ma trận có tăng dần hay không
+        public static bool KiemTraDongTang(int[,] A, int k)
+        {
+            for (int j = 0; j < A.GetLength(1) - 1; j++)
+            {
+                if (A[k, j]  > A[k, j+1])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        //Bài 354: Kiểm tra các giá trị trong ma trận có giảm dần theo dòng và cột hay không
+        public static bool KiemTraGiamDan(int[,] A)
+        {
+            int x = A[0, 0];
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    if (A[i, j] > x)
+                    {
+                        return false;
+                    }
+                    x = A[i, j];
+                }
+            }
+            return true;
+        }
+
+        //Bài 381: Tìm giá trị xuất hiện nhiều nhất
+        public static int TimPhanTuXuatHienNhieuNhat(int[,] A)
+        {
+            int kq = A[0, 0];
+            int demMax = DemSoLanXuatHien(A, kq);
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    if (DemSoLanXuatHien(A, A[i,j]) > demMax)
+                    {
+                        demMax = DemSoLanXuatHien(A, A[i, j]);
+                        kq = A[i, j];
+                    }
+                }
+            }
+            return kq;
+        }
+
+        public static int DemSoLanXuatHien(int[,] A,int x)
+        {
+            int dem = 0;
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    if (A[i, j] == x)
+                    {
+                        dem++;
+                    }
+                }
+            }
+            return dem;
         }
     }
 }
