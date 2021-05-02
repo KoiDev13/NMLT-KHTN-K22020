@@ -6,15 +6,28 @@ namespace NMLT_FULL
     {
         static void Main(string[] args)
         {
+            
+            PHANSO a, b, sum;
+            Console.WriteLine("Nhap phan so dau tien:");
+            a = XL_PHANSO.NhapPhanSo();
+            Console.WriteLine("Nhap phan so thu hai:");
+            b = XL_PHANSO.NhapPhanSo();
+            sum = XL_PHANSO.TinhTong(a, b);
+            string chuoia = XL_PHANSO.XuatPhanSo(a);
+            Console.WriteLine($"Phan so dau tien la {chuoia}");
+            string chuoib = XL_PHANSO.XuatPhanSo(b);
+            Console.WriteLine($"Phan so thu hai la {chuoib}");
+            string kq_tong = XL_PHANSO.XuatPhanSo(sum);
+            Console.WriteLine($"Phan so thu hai la {kq_tong}");
+  
+            /*
             // Nhap ma tran
-
-
             int[,] A = XL_MATRAN.NhapMaTran();
             XL_MATRAN.XuatMaTran(A);
             
             int sum = XL_MATRAN.TinhTong(A);
             Console.WriteLine($"Tong phan tu cua ma tran la {sum}");
-            /*
+            
             int maxi = XL_MATRAN.TimMax(A);
             Console.WriteLine($"Max cua ma tran la {maxi}");
             int nguyento = XL_MATRAN.DemNguyenTo(A);
@@ -37,12 +50,13 @@ namespace NMLT_FULL
 
             bool giamdan = XL_MATRAN.KiemTraGiamDan(A);
             Console.WriteLine($"Giam dan la {giamdan}");
-            */
+            
 
             int mode = XL_MATRAN.TimPhanTuXuatHienNhieuNhat(A);
             Console.WriteLine($"Phan tu xuat hien nhieu nhat {mode}");
-            
-            /*  
+
+            ========================================================================
+              
             // Nhap mang
             int[] A = XL_MANG.NhapMang();
 
