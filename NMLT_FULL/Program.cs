@@ -7,15 +7,12 @@ namespace NMLT_FULL
         static void Main(string[] args)
         {
             // Nhap ma tran
-
-
             int[,] A = XL_MATRAN.NhapMaTran();
             XL_MATRAN.XuatMaTran(A);
             int sum = XL_MATRAN.TinhTong(A);
             Console.WriteLine($"Tong phan tu cua ma tran la {sum}");
             int maxi = XL_MATRAN.TimMax(A);
             Console.WriteLine($"Max cua ma tran la {maxi}");
-            
             
             /*  
             // Nhap mang
