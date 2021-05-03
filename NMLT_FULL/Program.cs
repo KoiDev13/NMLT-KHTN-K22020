@@ -9,6 +9,13 @@ namespace NMLT_FULL
             
             Console.WriteLine("Hello_world");
 
+             /*==================== XL_DAGIAC ====================
+            DAGIAC dg;
+            dg = XL_DAGIAC.NhapDaGiac();
+            double chuVi = XL_DAGIAC.TinhChuVi(dg);
+            Console.WriteLine($"Chu vi cua tam giac la {chuVi}");
+            */
+            
             /*==================== XL_TAMGIAC ====================
             TAMGIAC tg;
             tg = XL_TAMGIAC.NhapTamGiac();
