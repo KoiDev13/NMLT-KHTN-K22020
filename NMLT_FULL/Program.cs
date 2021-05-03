@@ -7,6 +7,31 @@ namespace NMLT_FULL
         static void Main(string[] args)
         {
             
+            Console.WriteLine("Hello_world");
+
+            /*==================== XL_TAMGIAC ====================
+            TAMGIAC tg;
+            tg = XL_TAMGIAC.NhapTamGiac();
+            double chuvi = XL_TAMGIAC.TinhChuVi(tg);
+            Console.WriteLine($"Chu vi cua tam giac la {chuvi}");
+            */
+
+            /* ==================== XL_DIEM ====================
+            DIEM a, b;
+            Console.WriteLine("Nhap diem a:");
+            a = XL_DIEM.NhapDiem();
+            Console.WriteLine("Nhap diem b:");
+            b = XL_DIEM.NhapDiem();
+
+            string ToaDo_a = XL_DIEM.XuatDiem(a);
+            Console.WriteLine($"Diem a {ToaDo_a}");
+            string ToaDo_b = XL_DIEM.XuatDiem(b);
+            Console.WriteLine($"Diem b {ToaDo_b}");
+            double khoangcach = XL_DIEM.TinhKhoangCach(a, b);
+            Console.WriteLine($"Khoang cach giua diem a va b la {khoangcach}");
+            */
+
+            /* ==================== XL_PHANSO ====================
             PHANSO a, b, sum;
             Console.WriteLine("Nhap phan so dau tien:");
             a = XL_PHANSO.NhapPhanSo();
@@ -19,8 +44,9 @@ namespace NMLT_FULL
             Console.WriteLine($"Phan so thu hai la {chuoib}");
             string kq_tong = XL_PHANSO.XuatPhanSo(sum);
             Console.WriteLine($"Phan so thu hai la {kq_tong}");
+            */
   
-            /*
+            /* ==================== XL_MATRAN ====================
             // Nhap ma tran
             int[,] A = XL_MATRAN.NhapMaTran();
             XL_MATRAN.XuatMaTran(A);
@@ -55,7 +81,7 @@ namespace NMLT_FULL
             int mode = XL_MATRAN.TimPhanTuXuatHienNhieuNhat(A);
             Console.WriteLine($"Phan tu xuat hien nhieu nhat {mode}");
 
-            ========================================================================
+            ==================== XL_MANG_1_CHIEU ====================
               
             // Nhap mang
             int[] A = XL_MANG.NhapMang();
